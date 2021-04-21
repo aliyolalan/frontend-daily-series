@@ -1,0 +1,104 @@
+// reset
+@import "reset";
+@import "variables";
+
+// FONT FAMILY
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+body {
+  background: $bgColor;
+  font-family: Mulish;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+input {
+  height: 5rem;
+  width: 100%;
+  background-color: $bgColor;
+  border: none;
+  border-radius: 5px;
+
+  &::placeholder {
+    color: $inputColor;
+    font-size: 1.6rem;
+  }
+}
+
+.wrapper {
+  width: 37.7rem;
+  margin: 2.5rem;
+  position: relative;
+}
+
+.component {
+  &__container {
+    background-color: $componentBgColor;
+    border-radius: 5px;
+    padding: 4rem 4.5rem;
+
+    form {
+      position: relative;
+      margin-bottom: 3rem;
+
+      .search-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5.3rem;
+        height: 5rem;
+        width: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      input {
+        padding-left: 5.3rem;
+        color: $colorWhite;
+
+        &:focus {
+          outline: 0;
+        }
+      }
+    }
+
+    h6 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: $colorWhite;
+      text-transform: uppercase;
+    }
+
+    ul {
+      margin-top: 1.3rem;
+
+      li {
+        list-style: none;
+
+        a {
+          display: block;
+          text-decoration: none;
+          color: $colorWhite;
+          font-size: 1.6rem;
+          padding: .7rem 0;
+
+          &:hover {
+            color: $colorHover;
+          }
+
+          &:last-child {
+            padding-bottom: 0;
+          }
+
+          &.active {
+            color: $colorHover;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

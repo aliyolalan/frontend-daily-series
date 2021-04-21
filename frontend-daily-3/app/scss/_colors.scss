@@ -1,0 +1,17 @@
+$white: #ffffff;
+$black: #000000;
+$bgColor:#1A212A;
+$primaryColor: #157AAF;
+$borderColor: rgba(#E2E9FF, 0.1);
+
+$transactionBgColor: #1B242E;
+
+//***** FOR NAV ICONS *****//
+$iconBgColor: rgba(#535F6D, 0.19);
+
+//***** MIXIN METHODS *****//
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
