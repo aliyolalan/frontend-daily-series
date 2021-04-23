@@ -31,6 +31,13 @@ body {
 .app {
     height: 100%;
 
+    //***** APP WRAPPER *****//
+    &__wrapper {
+        height: calc(100% -60px);
+        overflow: auto;
+    }
+
+
     //***** HEADER *****//
     &__header {
         display: flex;
@@ -199,4 +206,39 @@ body {
             color: $white;
         }
     }
+
+
+    //***** BOTTOM MENU *****//
+    .menu {
+        background-color: $bgColor;
+        border-top: 2px solid rgba($white, $alpha: 0.5);
+
+        &__list {
+            height: 6rem;
+            display: flex;
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+        }
+
+        &__link {
+            height: 6rem;
+            @include center;
+            cursor: pointer;
+
+            &--icon {
+                color: rgba($white, $alpha: 0.5);
+                font-size: 2.8rem;
+
+                &.active {
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
+
 }
